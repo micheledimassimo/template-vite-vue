@@ -3,7 +3,7 @@ export default {
   data() {
     return { 
       message: 'Template Vite + Vue'
-     }
+    }
   }
 }
 </script>
@@ -16,13 +16,16 @@ export default {
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
 header {
-  background-color: aquamarine;
+  background-color: $mainBgColor;
   text-align: center;
+  padding: 20px 0;
 }
 
 h1 {
-  color: lightcoral;
+  color: $mainColor;
 }
 </style>
